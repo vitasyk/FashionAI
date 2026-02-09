@@ -131,25 +131,64 @@ dist
 # OS metadata
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Build output
-dist
-dist-ssr
+# Common sensitive files
+.env
+.env.*
+!.env.example
 *.local
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
 
-# Vite
-# vite.config.ts.timestamp-*
-# vite.config.js.timestamp-*
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# Build and dependencies
+node_modules/
+dist/
+dist-ssr/
+.cache/
+.parcel-cache/
+.next/
+out/
+.nuxt/
+.vercel/
+build/
+bin/
+obj/
 
 # Supabase
+.supabase/
 supabase/.temp/
 supabase/functions/.temp/
-.supabase/
-.env
+supabase/functions/*/node_modules/
 
 # Stripe
 .stripe/
 
+# IDE and Editor settings
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+.idea/
+*.swp
+*.swo
+.ntvs*
+.njsproj
+.sln
+.suo
+
 # Temporary files
 tmp/
 temp/
+backup/
+*.tmp
+*.bak
+*.old
